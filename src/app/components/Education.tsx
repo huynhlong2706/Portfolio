@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
 import { Award } from "lucide-react";
 
+const ASSET_BASE = import.meta.env.BASE_URL;
+
 const EDUCATION = [
   {
     id: "hcmut",
@@ -8,7 +10,7 @@ const EDUCATION = [
     period: "2023 - 2027",
     degree: "Bachelor of Engineering",
     major: "Computer Science",
-    logo: "/01_logobachkhoatoi.png",
+    logo: `${ASSET_BASE}01_logobachkhoatoi.png`,
     highlights: [
       "Specializing in Artificial Intelligence and Natural Language Processing.",
       "Top 46 participant in the HCMUT Presentation Contest.",
@@ -22,7 +24,7 @@ const EDUCATION = [
     period: "2020 - 2023",
     degree: "High School Diploma",
     major: "Science Track",
-    logo: "/Logo_THPT_Trần_Phú,_TP.HCM.png",
+    logo: `${ASSET_BASE}Logo_THPT_Trần_Phú,_TP.HCM.png`,
     highlights: [
       "Built a strong foundation in Mathematics, Physics, and logic.",
       "Developed an early passion for technology and problem-solving.",

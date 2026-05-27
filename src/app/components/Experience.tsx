@@ -1,13 +1,15 @@
 import { motion } from "motion/react";
 import { Briefcase } from "lucide-react";
 
+const ASSET_BASE = import.meta.env.BASE_URL;
+
 const EXPERIENCE = [
   {
     id: "ak-technology",
     company: "AK Technology",
     role: "AI Engineer Intern", 
     period: "06/2026 - 08/2026",
-    logo: "/AK.png", // Đã cập nhật tên ảnh
+    logo: `${ASSET_BASE}AK.png`,
     highlights: [
       "Researching and developing an AI Assistant using Large Language Models (LLM) and Retrieval-Augmented Generation (RAG).",
       "Focusing on healthcare applications: assisting with disease diagnosis, dietary/exercise recommendations, and health monitoring.",
@@ -20,7 +22,7 @@ const EXPERIENCE = [
     company: "ZIGExN VENTURA",
     role: "Web Developer Intern",
     period: "05/2026 - 06/2026",
-    logo: "/Ventura.png", // Đã cập nhật tên ảnh
+    logo: `${ASSET_BASE}Ventura.png`,
     highlights: [
       "Trained in Japanese corporate communication culture, specifically the Ho-Ren-So (Report - Communicate - Consult) framework.",
       "Developed a Job Crawler system to automatically scrape, parse, and aggregate job posting data.",

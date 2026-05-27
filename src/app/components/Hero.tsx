@@ -9,6 +9,8 @@ import {
 
 import { useEffect, useState } from "react";
 
+const ASSET_BASE = import.meta.env.BASE_URL;
+
 /* =========================
    ACHIEVEMENT STATS
 ========================= */
@@ -376,7 +378,7 @@ export function Hero() {
                   relative z-10"
                 >
                   <img
-                    src="/avatar.JPG"
+                    src={`${ASSET_BASE}avatar.JPG`}
                     alt="Bui Huynh Long"
                     className="w-full h-full object-cover object-bottom scale-125"
                   />
@@ -421,7 +423,7 @@ export function Hero() {
                 px-5 py-4"
               >
                 <video
-                  src="/bongo-cat-neon-moewalls-com.mp4"
+                  src={`${ASSET_BASE}bongo-cat-neon-moewalls-com.mp4`}
                   autoPlay
                   loop
                   muted

@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { Brain, Gamepad2, Quote, ArrowRight, X, ChevronLeft, ChevronRight } from "lucide-react";
+
+const ASSET_BASE = import.meta.env.BASE_URL;
 const ABOUT_CARDS = [
   {
     id: "expertise",
@@ -37,7 +39,7 @@ const DIRECTIONS = [
     color: "#bb9af7",
     icon: "🌌",
     photo: "sky / in memoriam",
-    imgSrc: "/up.JPG",
+    imgSrc: `${ASSET_BASE}up.JPG`,
   },
   {
     dir: "←",
@@ -47,7 +49,7 @@ const DIRECTIONS = [
     color: "#e0af68",
     icon: "🏡",
     photo: "family / childhood",
-    imgSrc: "/behind.jpg",
+    imgSrc: `${ASSET_BASE}behind.jpg`,
   },
   {
     dir: "→",
@@ -57,7 +59,7 @@ const DIRECTIONS = [
     color: "#9ece6a",
     icon: "🤝",
     photo: "friends",
-    imgSrc: "/beside.JPG",
+    imgSrc: `${ASSET_BASE}beside.JPG`,
   },
   {
     dir: "↓",
@@ -67,7 +69,7 @@ const DIRECTIONS = [
     color: "#7aa2f7",
     icon: "🙏",
     photo: "teachers / mentors",
-    imgSrc: "/down.JPG",
+    imgSrc: `${ASSET_BASE}down.JPG`,
   },
   {
     dir: "↗",
@@ -77,7 +79,7 @@ const DIRECTIONS = [
     color: "#2ac3de",
     icon: "🎯",
     photo: "study / work",
-    imgSrc: "/forward.JPG",
+    imgSrc: `${ASSET_BASE}forward.JPG`,
   },
   {
     dir: "◉",
@@ -88,7 +90,7 @@ const DIRECTIONS = [
     icon: "🐉", // Thay gương bằng biểu tượng Rồng của bạn
     photo: "yourself",
     isCenter: true,
-    imgSrc: "/within.jpg",
+    imgSrc: `${ASSET_BASE}within.jpg`,
   },
 ];
 
